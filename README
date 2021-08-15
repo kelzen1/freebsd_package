@@ -5,20 +5,20 @@ pkg update -f
 portsnap fetch extract
 portsnap fetch update
 cd /usr/ports/devel/subversion && make install clean BATCH=yes
-cd /usr/ports/devel/makedepend && make install clean BATCH=yes //for marty-source you don t need this pkg+
-cd /usr/ports/devel/gmake && make install clean BATCH=yes
 cd /usr/ports/graphics/devil && make install clean BATCH=yes
 cd /usr/ports/misc/compat7x && make install clean BATCH=yes
 cd /usr/ports/misc/compat9x && make install clean BATCH=yes
 cd /usr/ports/misc/compat11x && make install clean BATCH=yes
+cd /usr/ports/lang/python27 && make install clean BATCH=yes
 cd /usr/ports/security/openssl && make install clean BATCH=yes
 cd /usr/ports/security/cryptopp && make install clean BATCH=yes
-cd /usr/ports/lang/python27 && make install clean BATCH=yes
 cd /usr/ports/devel/boost-all && make install clean BATCH=yes
-cd /usr/ports/devel/gdb && make install clean BATCH=yes
+cd /usr/ports/devel/makedepend && make install clean BATCH=yes //for marty-source you don t need this pkg+
+cd /usr/ports/devel/gmake && make install clean BATCH=yes
 cd /usr/ports/lang/gcc8 && make install clean BATCH=yes
 cd /usr/ports/lang/gcc9 && make install clean BATCH=yes
 cd /usr/ports/lang/gcc10 && make install clean BATCH=yes
+cd /usr/ports/devel/gdb && make install clean BATCH=yes //dbg
 ======================
 you can use "pgk install" to wait less 
 
