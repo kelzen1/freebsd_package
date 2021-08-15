@@ -1,7 +1,7 @@
 # freebsd_package
 
 ======================
-pkg update -f
+pkg update -f 
 portsnap fetch extract
 portsnap fetch update
 cd /usr/ports/devel/subversion && make install clean BATCH=yes
